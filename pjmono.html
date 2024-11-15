@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keetavee's Portfolio</title>
+    <style>
+        /* Styling for Navbar */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #4B0082; /* Purple background for Navbar */
+            color: #fff;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #98FB98; /* Light green for hover */
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .toggle-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #4B0082; /* Purple background for mobile menu */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .navbar .toggle-btn {
+                display: block;
+            }
+
+            .navbar .menu.active {
+                display: flex;
+            }
+        }
+
+        /* Section styling */
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #4B0082; /* Purple for section headings */
+        }
+
+        /* Circle image styling */
+        .circle {
+            border-radius: 50%;
+            border: 4px solid #4B0082; /* Purple border */
+            margin-top: 1rem;
+        }
+
+        /* Link styling */
+        a {
+            color: #4B0082;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #98FB98; /* Light green for hover */
+            text-decoration: underline;
+        }
+
+        /* Contact list styling */
+        ol {
+            list-style-position: inside;
+            padding: 0;
+        }
+    </style>
+    <script>
+        // Toggle Navbar menu visibility
+        function toggleMenu() {
+            document.querySelector('.navbar .menu').classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar with Toggle -->
+    <nav class="navbar">
+        <div>Keetavee's Portfolio</div>
+        <div class="toggle-btn" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Content sections -->
+    <section id="about">
+        <img src="file:///D:/429797281_1871229009964236_3209937382487015766_n.jpg" width="200" height="200" class="circle" alt="Profile Picture">
+        <h1>Keetavee Kenchompoo</h1>
+        <p>IP: 6652300541</p>
+        <p>คณะวิศวกรรมศาสตร์ </p>
+        <p>สาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์</p>
+        <a href="https://www.pim.ac.th/et">PIM Engineering Department</a>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>นักศึกษา สถาบันการจัดการปัญญาภิวัฒน์ คณะวิศวกรรมศาสตร์</p>
+        <p>สาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ ชั้นปีที่ 2</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>ชอบทำอาหาร, ชอบสีแดง, อ่านหนังสือ, เล่นเกม (INFJ)</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ol>
+            <li>อีเมล: gn001gundamexia(Add)gmail.com</li>
+            <li>เบอร์โทรศัพท์: 012-344-4566</li>
+            <li>ที่อยู่: เมืองบางกอก จังหวัดกรุงเทพฯ</li>
+            <li>ช่องทางอื่น ๆ: LinkedIn, Facebook</li>
+        </ol>
+    </section>
+</body>
+
+</html>
